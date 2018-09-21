@@ -1,0 +1,58 @@
+a
+{
+    text-decoration: none;
+}
+
+.table-title
+{
+    color: white;
+    background-color:dodgerblue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 0px 0px;
+    margin: -10px 0px 0px -10px;
+    height: 58px;
+    padding-right: 150px;
+}
+
+td.Name-site
+{
+    font-size: 37;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding-left: 0.7em;
+    padding-right: 650px;
+}
+
+.Choice-main-menu
+{
+    height: 54px;                   
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover {
+    width: 70;
+    color: rgb(245, 230, 230);
+    padding: 10px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover 
+{
+    color: rgb(201, 195, 195);    
+}
+
+
+.Title-Contact
+{
+    text-align: center;
+}
+
+.Author-Contact
+{
+    align: center;
+}

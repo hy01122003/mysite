@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Home/base.css' %}" />
+    {% block script %}
+    {% endblock %}
+</head>
+
+<body>
+    <table class="table-title">
+        <tr>
+            <td class="Name-site">
+                <a href="{% url 'url_Home' %}">HyWebsite</a>
+            </td>
+            <td class="Choice-main-menu">
+                <a href="{% url 'url_Home' %}">Home</a>
+            </td>
+            <td class="Choice-main-menu">
+                <a href="{% url 'url_Contact' %}">Contact </a>   
+            </td>
+            <td class="Choice-main-menu">
+                <a href="{% url 'url_Login' %}">Login</a>
+            </td>
+            <td class="Choice-main-menu">
+                <a href="{% url 'url_Signup' %}">Registry</a>
+            </td>
+        </tr>
+    </table>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

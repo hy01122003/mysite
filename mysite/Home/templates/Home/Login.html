@@ -1,0 +1,30 @@
+{% extends "Home/side.html" %}
+
+{% block title %}
+    Log in
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript">
+        function Notification() {
+            alert("{{ Notification }}");
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
+    {% if Notification %}
+        <script type="text/javascript">
+            Notification();
+        </script>
+    {% endif %}
+    <form action="" method="POST"> 
+        <fieldset class="fieldset-login">
+            {% csrf_token %} 
+            <table>
+                {{ form.as_table }}
+            </table>
+            <input type="submit" value="Log in" />
+        </fieldset>
+    </form>
+{% endblock %}
